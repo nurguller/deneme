@@ -3,6 +3,7 @@ import 'package:firebase_auth_demo/widgets/custom_button.dart';
 import 'package:firebase_auth_demo/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:intl_phone_field/intl_phone_field.dart';
 
 class PhoneScreen extends StatefulWidget {
   static String routeName = '/phone';
@@ -38,6 +39,7 @@ class _PhoneScreenState extends State<PhoneScreen> {
             onChanged: (phone) {
               print(phone.completeNumber);
             },
+            onCountryChanged: (country) {},
           ),
           CustomTextField(
             controller: phoneController,
@@ -60,4 +62,5 @@ class _PhoneScreenState extends State<PhoneScreen> {
 IntlPhoneField(
     {required InputDecoration decoration,
     required String initialCountryCode,
-    required Null Function(dynamic phone) onChanged}) {}
+    required Null Function(dynamic phone) onChanged,
+    required Null Function(dynamic country) onCountryChanged}) {}

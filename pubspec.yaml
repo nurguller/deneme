@@ -27,19 +27,20 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  cupertino_icons: ^1.0.2
-  firebase_auth: ^3.3.12
-  firebase_core: ^1.14.0
+  
+  
   flutter:
     sdk: flutter
   flutter_facebook_auth: ^4.1.2
   google_sign_in: ^5.2.4
   provider: ^6.0.2
-  flutter:
-    sdk: flutter
   otp_screen: ^0.0.3
   intl_phone_field: ^3.1.0
-  fzregex: ^6.0.2
+  cupertino_icons: ^1.0.2
+  firebase_auth: ^3.3.12
+  firebase_core: ^1.14.0
+  fzregex: ^2.0.0
+  
 
 dev_dependencies:
   flutter_lints: ^1.0.0
